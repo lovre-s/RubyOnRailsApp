@@ -24,7 +24,7 @@
    <div class="col-md-4">
       <div class="well">
          <h4>Recent articles</h4>
-         <% @lastFiveArticles.each do |a| %>
+         <% @last_five_articles.each do |a| %>
          Created by: <%= a.user.username %><br />
          <strong><%= link_to a.title, a %></strong>
          <p><%= truncate(a.body) %></p>

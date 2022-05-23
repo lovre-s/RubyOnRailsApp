@@ -52,6 +52,9 @@ Rails.application.configure do
   # Tell Active Support which deprecation messages to disallow.
   config.active_support.disallowed_deprecation_warnings = []
 
+    # Disable the need to have a record on the other end of an association
+    config.active_record.belongs_to_required_by_default = false
+
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true
 
