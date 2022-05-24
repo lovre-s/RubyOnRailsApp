@@ -1,7 +1,7 @@
 FactoryBot.define do
     factory :comment do
       body { 'komentar' }
-      user_id {1}
-      article_id {1}
+      user { build :user }
+      article { build :article }
     end
   end

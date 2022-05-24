@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe ArticlesController, type: :controller do
 
-  let(:article) { build(:article) }
+  let(:article) { create(:article) }
 
     describe 'create' do
         it 'successfully creates a new article' do

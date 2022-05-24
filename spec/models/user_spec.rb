@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
 
-  let(:user) { build(:user) }
+  let(:user) { create(:user) }
 
   describe 'creation' do
     it 'checks that user can be created' do
